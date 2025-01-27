@@ -1,0 +1,24 @@
+# IntelliJ
+*.ipr
+*.iml
+*.iws
+/.idea/*
+!/.idea/codeStyleSettings.xml
+!/.idea/projectCodeStyle.xml
+!/.idea/vcs.xml
+!/.idea/misc.xml
+
+#	Maven
+**/target/
+
+# AsciiDoc/Markdown
+.$*.bkp
+
+# NPM
+dist
+
+# Demo-Project
+project
+
+quarkus.log
+src/test/resources/de/adito/designer/services/convert/yamlProject/.vscode/schemas/

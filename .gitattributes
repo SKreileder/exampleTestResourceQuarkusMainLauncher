@@ -1,0 +1,23 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.java 	text
+*.mf 	text
+*.xml 	text
+*.properties text
+*.html	text
+
+# Explicitly set every test resource to end the line with lf instead of crlf
+# due to npm creating files that way and it causing issue comparing files with stored and created ones
+src/test/resources/**/dummyDataModelLF.aod text eol=lf
+src/test/resources/**/dummyDataModelCRLF.aod text eol=crlf
+src/test/resources/**/dummyDataModelCR.aod text eol=cr
+
+# Declare files that will always have LF line endings on checkout. (Example: linux .sh script)
+*.sh text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
